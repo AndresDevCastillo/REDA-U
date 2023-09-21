@@ -84,7 +84,7 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
+  background: #f9b7ff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,7 +98,7 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #7a6960;
+  color: #b186f1;
   text-decoration: none;
 }
 
@@ -141,7 +141,7 @@ h6,
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #4e4039;
+  color: #000000;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -157,7 +157,7 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #eb5d1e;
+  color: #090909;
 }
 
 .navbar .getstarted,
@@ -353,8 +353,8 @@ h6,
 #hero {
   width: 100%;
   height: 70vh;
-  background: #96bedb;
-  border-bottom: 2px solid #fcebe3;
+  background: #;
+  border-bottom: 2px solid #caacf9;
   margin: 72px 0 -72px 0;
 }
 
@@ -363,11 +363,11 @@ h6,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #4e4039;
+  color: #84b6f4;
 }
 
 #hero h2 {
-  color: #a08f86;
+  color: #f9b7ff;
   margin: 15px 0 0 0;
   font-size: 24px;
 }
@@ -382,12 +382,12 @@ h6,
   border-radius: 3px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
-  background: #eb5d1e;
+  color: #caacf9;
+  background:#3edbde ;
 }
 
 #hero .btn-get-started:hover {
-  background: #ef7f4d;
+  background: #ef4db4;
 }
 
 #hero .animated {
