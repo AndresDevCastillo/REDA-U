@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #eb5d1e;
+  color: #0404e2;
   text-decoration: none;
 }
 
@@ -84,7 +84,8 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #0cb7f2;
+  background: #53d4ff
+  ;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -141,7 +142,8 @@ h6,
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  color: #f49cfc;
+  color: #def7ff
+  ;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -157,7 +159,7 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #84b6f4;
+  color: #def7ff;
 }
 
 .navbar .getstarted,
@@ -195,7 +197,7 @@ h6,
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  padding: 10px 20px;w
   font-size: 15px;
   text-transform: none;
 }
@@ -353,9 +355,9 @@ h6,
 #hero {
   width: 100%;
   height: 70vh;
-  background:#fcffff
+  background:#bceeff
   ;
-  border-bottom: 2px solid #caacf9;
+  border-bottom: 2px solid #ededed;
   margin: 72px 0 -72px 0;
 }
 
@@ -460,7 +462,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fcffff;
+  background-color: #bceeff;
 }
 
 .section-title {
@@ -474,7 +476,7 @@ section {
   padding-bottom: 0;
   line-height: 1px;
   margin-bottom: 15px;
-  color: #c2b7b1;
+  color: #3b8eed;
 }
 
 .section-title p {
@@ -483,7 +485,7 @@ section {
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  color: #4e4039;
+  color: #0cb7f2;
 }
 
 .section-title p::after {
@@ -492,7 +494,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: #eb5d1e;
+  background: #def7ff;
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -609,7 +611,7 @@ section {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #ef7f4d;
+  color: #ffff81;
 }
 
 .services .title {
