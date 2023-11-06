@@ -7,34 +7,99 @@
     <title>Sistema solar</title>
     <link rel="icon" href="icons/REDA-U/Sol.png">
     <style>
-        .img {
-            float: left;
+        .img1 {
+            display: flex;
+            float: unset;
             margin-right: 10px;
         }
 
         .caja {
             margin: 0 auto;
-            height: 700px;
-            width: 700px;
+            height: 
+            width: 
         }
+        body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    header {
+        background-color: #53D4FF;
+        padding: 15px;
+        text-align: center;
+        color: #ffffff;
+        }
+        h1 {
+        margin: 0;
+        font-size: 2em;
+        }
+
+        .Contenido {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        }
+
+        .Cuadro-texto {
+    flex: 1;
+    background-color: #53D4FF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+      }
+      .Cuadro-texto2{
+        flex: 2;
+    background-color: #53D4FF;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    text-align: center;  
+      }
+
+      .Text-principal{
+        display: flex;
+        float: right;
+      }
+    
+     *{  font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;}
+
+     footer {
+    background-color: #53D4FF;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
     </style>
 
 </head>
 
 <body>
     <div class="caja">
+        <header>
         <h1>Sistema solar</h1>
-        <p> Nuestro Sol es el padre de esta familia, y es como el faro que nos ilumina a todos. ¡Es tan brillante que
+    </header>
+
+       <strong class="Text-principal"> <p> Nuestro Sol es el padre de esta familia, y es como el faro que nos ilumina a todos. ¡Es tan brillante que
             necesitas gafas de sol especiales para mirarlo!</p>
-        <img src="img/sistema-solar.png" alt="" height="200" width="200">
+       <strong class="img1"><img src="img/sistema-solar.png" alt="" height="200" width="200" ></strong> 
 
         <h3>¿Qué es el sistema solar?</h3>
-        Imagina esto: en medio de este espacio gigantesco, tenemos al Señor Sol, ¡que es como la estrella más ruidosa y
+        <br>
+        <P class="Text2">Imagina esto: en medio de este espacio gigantesco, tenemos al Señor Sol, ¡que es como la estrella más ruidosa y
         luminosa de todas las galaxias! Es como si fuera una superestrella que siempre está en el centro de atención.
 
         Y luego, a su alrededor, tenemos una pandilla de ocho planetas, ¡sí, has oído bien, ocho! Son como los amigos
-        del Sol que lo acompañan en su aventura cósmica.
+        del Sol que lo acompañan en su aventura cósmica.</P> </strong>
 
+       <section class="Contenido">
+        <div class="Cuadro-texto">
         <h3>¿Cómo está conformado?</h3>
         <p>¡Imagina que este sistema solar es como una fiesta intergaláctica! En el centro, tenemos una súper estrella
             que
@@ -48,15 +113,21 @@
             elípticas
             en la pista de baile espacial. Algunos hacen movimientos amplios y elegantes, mientras que otros hacen giros
             rápidos y atrevidos. ¡Es todo un espectáculo cósmico que nunca se detiene!</p>
+        </div>
+        </section> 
 
         <img src="img/SOL.png" alt="Error">
 
-        <h3>Planetas del sistema solar</h3>
+        <section>
+            <div class="Cuadro-texto2">
+            <h3>Planetas del sistema solar</h3>
         ¡Oye, espera un momento! Hay un astro que no sigue las reglas y es como el "niño brillante" de la familia
         estelar. ¡El Sol es el único que emite su propia luz en todo el conjunto! Es como si llevara su propio
         espectáculo de luces cósmicas.
 
-        Ahora, hablemos de los miembros del club de planetas. Son como los amigos más geniales del Sol:
+        Ahora, hablemos de los miembros del club de planetas. Son como los amigos más geniales del Sol: 
+    </div>
+    </section>
 
         <h4>Planetas interiores - Los Terrestres Intrépidos</h4>
 
@@ -93,10 +164,12 @@
             <p>el girador loco, es como el primo que hace volteretas en el espacio, ¡nunca sabes en qué dirección va!</p>
 
         </ol>
-        <h6>Así que aquí tienes a los miembros de esta pandilla estelar, ¡cada uno con su propia personalidad única en
-            esta
-            gran fiesta cósmica!</h6>
-        </p>
+        
+         <footer>
+            Así que aquí tienes a los miembros de esta pandilla estelar, ¡cada uno con su propia personalidad única en
+            esta gran fiesta cósmica!
+        </footer>
+    
 
 
     </div>
