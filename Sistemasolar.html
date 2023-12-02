@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema solar</title>
     <link rel="icon" href="icons/REDA-U/Sol.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         .img1 {
             display: flex;
@@ -15,67 +17,95 @@
 
         .caja {
             margin: 0 auto;
-            height: 
-            width: 
         }
+
         body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-    }
-    header {
-        background-color: #53D4FF;
-        padding: 15px;
-        text-align: center;
-        color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: white;
         }
+
+        header {
+            background-color: #53D4FF;
+            padding: 15px;
+            text-align: center;
+            color: #ffffff;
+        }
+
         h1 {
-        margin: 0;
-        font-size: 2em;
+            margin: 0;
+            font-size: 2em;
         }
 
         .Contenido {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
         }
 
         .Cuadro-texto {
-    flex: 1;
-    background-color: #53D4FF;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 15px;
-    text-align: center;
-      }
-      .Cuadro-texto2{
-        flex: 2;
-    background-color: #53D4FF;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 15px;
-    text-align: center;  
-      }
+            flex: 1;
+            background-color: #53D4FF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
 
-      .Text-principal{
-        display: flex;
-        float: right;
-      }
-    
-     *{  font-family: Arial, Helvetica, sans-serif; 
-    font-size: 20px;}
+        }
 
-     footer {
-    background-color: #53D4FF;
-    padding: 20px;
-    text-align: center;
-    color: black;
-}
+        .planetas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .Cuadro-texto2 {
+            flex: 2;
+            display: flex;
+            background-color: #97bac5;
+            color: rgb(27, 26, 26);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .cuadro-solar {
+            padding: 50px;
+
+        }
+
+        .Text-principal {
+            display: flex;
+            float: left;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .text1 {
+            background-color: #53D4FF;
+            color: rgb(20, 20, 20);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        footer {
+            background-color: #53D4FF;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
     </style>
 
 </head>
@@ -83,96 +113,152 @@
 <body>
     <div class="caja">
         <header>
-        <h1>Sistema solar</h1>
-    </header>
+            <h1>Sistema solar</h1>
+        </header>
 
-       <strong class="Text-principal"> <p> Nuestro Sol es el padre de esta familia, y es como el faro que nos ilumina a todos. ¡Es tan brillante que
-            necesitas gafas de sol especiales para mirarlo!</p>
-       <strong class="img1"><img src="img/sistema-solar.png" alt="" height="200" width="200" ></strong> 
+        <div class="Text-principal">
+            <p> Nuestro Sol es el padre de esta familia, y es como el faro que nos ilumina a todos. ¡Es tan brillante
+                que
+                necesitas gafas de sol especiales para mirarlo!</p>
+            <div class="img1"><img src="img/sistema-solar.png" alt="" height="200" width="200"></div>
 
-        <h3>¿Qué es el sistema solar?</h3>
-        <br>
-        <P class="Text2">Imagina esto: en medio de este espacio gigantesco, tenemos al Señor Sol, ¡que es como la estrella más ruidosa y
-        luminosa de todas las galaxias! Es como si fuera una superestrella que siempre está en el centro de atención.
+            <br>
+            <P class="Text2"> <i>¿Qué es el sistema solar?</i> Imagina esto: en medio de este espacio gigantesco,
+                tenemos al Señor Sol, ¡que es como la estrella más ruidosa y
+                luminosa de todas las galaxias! Es como si fuera una superestrella que siempre está en el centro de
+                atención.
 
-        Y luego, a su alrededor, tenemos una pandilla de ocho planetas, ¡sí, has oído bien, ocho! Son como los amigos
-        del Sol que lo acompañan en su aventura cósmica.</P> </strong>
-
-       <section class="Contenido">
-        <div class="Cuadro-texto">
-        <h3>¿Cómo está conformado?</h3>
-        <p>¡Imagina que este sistema solar es como una fiesta intergaláctica! En el centro, tenemos una súper estrella
-            que
-            brilla como una estrella de Hollywood en la alfombra roja. Y a su alrededor, ¡están bailando ocho planetas
-            muy
-            variados! Algunos son grandes como gigantes de la pista de baile, y otros son pequeños y ágiles como
-            bailarines
-            de ballet.</p>
-
-        <p>Lo más loco es que cada uno de estos planetas sigue su propio estilo de baile, trazando trayectorias
-            elípticas
-            en la pista de baile espacial. Algunos hacen movimientos amplios y elegantes, mientras que otros hacen giros
-            rápidos y atrevidos. ¡Es todo un espectáculo cósmico que nunca se detiene!</p>
+                Y luego, a su alrededor, tenemos una pandilla de ocho planetas, ¡sí, has oído bien, ocho! Son como los
+                amigos
+                del Sol que lo acompañan en su aventura cósmica.</P>
         </div>
-        </section> 
 
-        <img src="img/SOL.png" alt="Error">
+        <section class="Contenido">
+            <div class="Cuadro-texto">
+                <h3>¿Cómo está conformado?</h3>
+                <p>¡Imagina que este sistema solar es como una fiesta intergaláctica! En el centro, tenemos una súper
+                    estrella
+                    que
+                    brilla como una estrella de Hollywood en la alfombra roja. Y a su alrededor, ¡están bailando ocho
+                    planetas
+                    muy
+                    variados! Algunos son grandes como gigantes de la pista de baile, y otros son pequeños y ágiles como
+                    bailarines
+                    de ballet.</p>
+
+                <p>Lo más loco es que cada uno de estos planetas sigue su propio estilo de baile, trazando trayectorias
+                    elípticas
+                    en la pista de baile espacial. Algunos hacen movimientos amplios y elegantes, mientras que otros
+                    hacen giros
+                    rápidos y atrevidos. ¡Es todo un espectáculo cósmico que nunca se detiene!</p>
+            </div>
+        </section>
 
         <section>
             <div class="Cuadro-texto2">
-            <h3>Planetas del sistema solar</h3>
-        ¡Oye, espera un momento! Hay un astro que no sigue las reglas y es como el "niño brillante" de la familia
-        estelar. ¡El Sol es el único que emite su propia luz en todo el conjunto! Es como si llevara su propio
-        espectáculo de luces cósmicas.
+                <img src="img/SOL.png" alt="Error">
+                <div class="cuadro-solar">
+                    <h3>Planetas del sistema solar</h3>
+                    <p>¡Oye, espera un momento! Hay un astro que no sigue las reglas y es como el "niño brillante" de la
+                        familia
+                        estelar. ¡El Sol es el único que emite su propia luz en todo el conjunto! Es como si llevara su
+                        propio
+                        espectáculo de luces cósmicas.
 
-        Ahora, hablemos de los miembros del club de planetas. Son como los amigos más geniales del Sol: 
-    </div>
-    </section>
+                        Ahora, hablemos de los miembros del club de planetas. Son como los amigos más geniales del Sol:
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <h4>Planetas interiores - Los Terrestres Intrépidos</h4>
+        <div class="text1">
+            <h4>Planetas interiores - Los Terrestres Intrépidos</h4>
 
-        <p>Aquí tenemos a los intrépidos planetas que están más cerca del Sol y son pequeños pero valientes: </p>
-        <ol>
-            <li>Marte</li> <img src="img/marte.png" alt="">
-            <p>el vecino rojo, es como el explorador curioso que a menudo nos hace preguntarnos si hay vida allá.</p>
-            <li>Mercurio</li> <img src="img/mercurio.png" alt="">
-            <p> el velocista del grupo, siempre corriendo alrededor como si tuviera prisa por llegar a alguna parte.</p>
-            <li>Venus</li> <img src="img/venus.png" alt="">
-            <p> la diosa de la belleza, aunque puede ser un poco temperamental a veces. ¡Seguro que tiene una mascarilla
-                de spa interplanetaria en su atmósfera!</p>
-            <li>Tierra</li> <img src="img/planeta-tierra.png" alt="">
-            <p>La Tierra, nuestro hogar, es como la joya azul de la pandilla. Tiene océanos, montañas y un montón de
-                criaturas divertidas, ¡incluyéndonos a nosotros!</p>
+            <p>Aquí tenemos a los intrépidos planetas que están más cerca del Sol y son pequeños pero valientes: </p>
 
-        </ol>
-        Tambien llamados planetas terrestres, ya que poseen superficies solidas, concretas alrededor de la cual hay un
-        atmósfera (excepto en el caso de Mercurio)
+            <div class="planetas">
+                <div class="card" style="width: 12rem;">
+                    <img src="img/mars.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Marte</h5>
+                        <p class="card-text">el vecino rojo, es como el explorador curioso que a menudo nos hace
+                            preguntarnos si hay vida allá.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 12rem;">
+                    <img src="img/mercury.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercurio</h5>
+                        <p class="card-text">el velocista del grupo, siempre corriendo alrededor como si tuviera prisa por llegar a alguna
+                            parte. </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 12rem;">
+                    <img src="img/venus.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venus</h5>
+                        <p class="card-text">la diosa de la belleza, aunque puede ser un poco temperamental a veces. ¡Seguro que tiene una
+                            mascarill de spa interplanetaria en su atmósfera! </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 12rem;">
+                    <img src="img/eart.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra</h5>
+                        <p class="card-text">La Tierra, nuestro hogar, es como la joya azul de la pandilla. Tiene océanos, montañas y un
+                            montón de criaturas divertidas, ¡incluyéndonos a nosotros!</p>
+                    </div>
+                </div>
+            </div>
+            <h4 style="margin-top: 30px;">Planetas exteriores - Los Gigantes al Vapor</h4>
+            <p> Y luego están los planetas que son un poco más perezosos, se relajan un poco más lejos del Sol, y
+                son
+                gigantes y un poco vaporosos:</p>
+                <div class="planetas">
+                    <div class="card" style="width: 12rem;">
+                        <img src="img\jupiter.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Júpiter</h5>
+                            <p class="card-text">el gigante amigable, es como el tío grandote que siempre tiene una sonrisa en la cara y espacio
+                                de sobra para todos. </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/saturn.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Saturno</h5>
+                            <p class="card-text">el señor de los anillos, es como el tío que lleva siempre los anillos más geniales y se los
+                                muestra a todo el mundo.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/neptune.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Neptuno</h5>
+                            <p class="card-text">el girador loco, es como el primo que hace volteretas en el espacio, ¡nunca sabes en qué
+                                dirección va!</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 12rem;">
+                        <img src="img/uranus.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Urano</h5>
+                            <p class="card-text">el girador loco, es como el primo que hace volteretas en el espacio, ¡nunca sabes en qué
+                                dirección va!</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
-        <h4>Planetas exteriores - Los Gigantes al Vapor</h4>
-        <p> Y luego están los planetas que son un poco más perezosos, se relajan un poco más lejos del Sol, y son
-            gigantes y un poco vaporosos:</p>
-        <ol>
-            <li>Júpiter</li> <img src="img/jupiter.png" alt="">
-            <p>el gigante amigable, es como el tío grandote que siempre tiene una sonrisa en la cara y espacio de sobra
-                para todos.</p>
-            <li>Saturno</li> <img src="img/saturno.png" alt="">
-            <p>el señor de los anillos, es como el tío que lleva siempre los anillos más geniales y se los muestra a
-                todo el mundo.</p>
-            <li>Neptuno</li> <img src="img/neptuno.png" alt="">
-            <p> el pescador misterioso. ¿Qué estará pescando en su atmósfera azul profundo? ¡Es un misterio!</p>
-            <li>Urano</li> <img src="img/urano.png" alt="">
-            <p>el girador loco, es como el primo que hace volteretas en el espacio, ¡nunca sabes en qué dirección va!</p>
-
-        </ol>
-        
-         <footer>
-            Así que aquí tienes a los miembros de esta pandilla estelar, ¡cada uno con su propia personalidad única en
-            esta gran fiesta cósmica!
-        </footer>
-    
+            <footer>
+                Así que aquí tienes a los miembros de esta pandilla estelar, ¡cada uno con su propia personalidad única
+                en
+                esta gran fiesta cósmica!
+            </footer>
 
 
-    </div>
+
+        </div>
 </body>
 
 </html>
