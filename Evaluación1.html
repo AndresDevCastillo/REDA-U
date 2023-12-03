@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ess">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script>
+    function Boton () {
+  var pregunta1= document.getElementById('pregunta1').value;
+  var pregunta2= document.getElementById('pregunta2').value;
+  var pregunta3= document.getElementById('pregunta3').value;
+  var pregunta4= document.getElementById('pregunta4').value;
+  var pregunta5= document.getElementById('pregunta5').value;
+  var pregunta6= document.getElementById('pregunta6').value;
+  var pregunta7= document.getElementById('pregunta7').value;
+  var pregunta8= document.getElementById('pregunta8').value;
+  var pregunta9= document.getElementById('pregunta9').value;
+  var pregunta10= document.getElementById('pregunta10').value;
+  var respuesta=0;
+
+  if(pregunta1 == 'c') {
+    respuesta++;
+  } 
+  if (pregunta2 == 'c'){
+    respuesta++;
+  }
+  if(pregunta3 == 'c'){
+    respuesta++;
+  }
+  if (pregunta4 == 'c'){
+    respuesta++;
+  }
+  if(pregunta5 == 'c'){
+    respuesta++;
+  }
+  if(pregunta6 == 'c'){
+    respuesta++;
+  }
+  if(pregunta7 == 'c'){
+    respuesta++;
+  }
+  if(pregunta8 == 'c'){
+    respuesta++;
+  }
+  if(pregunta9 == 'c'){
+    respuesta++;
+  }
+  if(pregunta10 == 'c'){
+    respuesta++;
+  }
+  
+  alert (respuesta) 
+
+}
+</script>
+<style>
+    label{
+        font-size: 20px;
+    }
+</style>
+</head>
+<body class="container mt-5">
+    <h2>EVALUACIÓN 1</h2>
+    <br>
+    <label>¿Cuál es el planeta más grande de nuestro sistema solar?</label>
+    <select class="form-control" id="pregunta1">
+        <option value="seleccione una respuesta"></option>
+        <option>Tierra</option>
+        <option value="c">Júpiter</option>
+        <option>Saturno</option>
+        <option>Marte</option>
+    </tr>
+    </select>
+    <br>
+    <label>¿Qué cuerpos celestes giran alrededor de los planetas?</label>
+    <select class="form-control" id="pregunta2">
+        <option value="seleccione una respuesta"></option>
+        <option> Meteoritos</option>
+        <option>Estrellas</option>
+        <option value="c">Lunas</option>
+        <option>Cometas</option>
+    </select>
+<br>
+    <label>¿Cuál es la estrella más cercana a la Tierra?</label>
+    <select class="form-control" id="pregunta3">
+        <option value="seleccione una respuesta"></option>
+        <option>Sirio</option>
+        <option value="c">Próxima Centauri</option>
+        <option>Alfa Centauri</option>
+        <option>Betelgeuse</option>
+    </select>
+    <br>
+    <label>¿Qué fenómeno natural produce la Luna en la Tierra?</label>
+    <select class="form-control" id="pregunta4">
+        <option value="seleccione una respuesta"></option>
+        <option value="c">Mareas</option>
+        <option>Terremotos</option>
+        <option>Huracanes</option>
+        <option>Tornados</option>
+    </select>
+    <br>
+    <label>¿Cuántos planetas terrestres hay en nuestro sistema solar?</label>
+    <select class="form-control" id="pregunta5">
+        <option value="seleccione una respuesta"></option>
+        <option  value="c">4</option>
+        <option>6</option>
+        <option>2</option>
+        <option>8</option>
+    </select>
+    <br>
+    <label>¿Cuál es el nombre del telescopio espacial lanzado por la NASA en 1990?</label>
+    <select class="form-control" id="pregunta6">
+        <option value="seleccione una respuesta"></option>
+        <option value="c">Hubble</option>
+        <option>Kepler</option>
+        <option>Galileo</option>
+        <option>Copérnico</option>
+    </select>
+    <br>
+    <label>¿Qué es un año luz?</label>
+    <select class="form-control" id="pregunta7">
+        <option value="seleccione una respuesta"></option>
+        <option value="c">La distancia que la luz viaja en un año</option>
+        <option>La velocidad de la luz</option>
+        <option>La luminosidad de una estrella</option>
+        <option>El tiempo que tarda la luz en dar una vuelta al Sol</option>
+    </select>
+    <br>
+    <label>¿Cuál es la fase de la Luna en la que la vemos completamente iluminada desde la Tierra?</label>
+    <select class="form-control" id="pregunta8">
+        <option value="seleccione una respuesta"></option>
+        <option>Cuarto creciente</option>
+        <option>Luna nueva</option>
+        <option>Luna llena</option>
+        <option>Cuarto menguante</option>
+    </select>
+    <br>
+    <label>¿Qué es un eclipse solar?</label>
+    <select class="form-control" id="pregunta9">
+        <option value="seleccione una respuesta"></option>
+        <option>Cuando la Tierra se interpone entre el Sol y la Luna</option>
+        <option  value="c">Cuando la Luna se interpone entre la Tierra y el Sol</option>
+        <option>Cuando un planeta se encuentra entre dos estrellas</option>
+        <option>Cuando la Luna proyecta su sombra sobre la Tierra, bloqueando parcial o totalmente la luz solar.</option>
+    </select>
+    <br>
+    <label>¿Comó se llama nuestro planeta?</label>
+    <select class="form-control" id="pregunta10">
+        <option value="seleccione una respuesta"></option>
+        <option>Saturno</option>
+        <option>Marte</option>
+        <option>Júpiter</option>
+        <option value="c">Tierra</option>
+    </select>
+    <br>
+    <button class="btn btn-outline-info" onclick="Boton ()">Enviar</button> 
+</body>
+</html>
