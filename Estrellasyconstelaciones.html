@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrellas y constelaciones</title>
     <link rel="icon" href="img/stars_3266390.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
         .caja {
-            margin: 0 auto;
+            display: flex;
+
+        }
+        .caja p {
+            padding: 30px;
+        }
+        .caja img {
+            margin-right: 50px;
         }
 
         body {
             background-color: white;
             padding: 50px;
         }
+
         header {
         background-color: #233c44;
         padding: 15px;
         text-align: center;
         color: #ffffff;
         }
-        .caja2{}
-    .Text1 {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #E8F0FA;
-    font-size: 20px;
+
+        .caja2 {
+            background-color: rgb(202, 255, 255);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 35px;
         }
 
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
+        
+
+        
 
     </style>
 </head>
@@ -52,7 +67,7 @@
     </div>
     <div class="caja2">
         <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">¿Cuántas constelaciones existen?</h2>
-        <p class="Text1">La Unión Astronómica Internacional, esa autoridad estelar, oficialmente reconoce 88 constelaciones en el
+        <p >La Unión Astronómica Internacional, esa autoridad estelar, oficialmente reconoce 88 constelaciones en el
             cielo
             nocturno. Algunas de ellas fueron idea del antiguo matemágico Claudio Ptolomeo, quien allá por el 150 d.C.
             se
@@ -66,29 +81,34 @@
     <hr>
         ¡Vamos a hacer un rápido recorrido por las constelaciones del hemisferio norte y sur!
  <h3>Hemisferio norte:</h3>
-        <table class="tu" border="4">
+        <table class="table table-bordered table-info">
             <tbody>
                 <tr>
                     <td>Andrómeda</td>
                     <td> Aquí vemos a la princesa Andrómeda, rescatada por Perseo. ¡Es enorme y tiene 152 estrellas!</td>
+                    <td><img src="img/andromeda.jfif" width="150px" alt=""></td>
                 </tr>
                 <tr>
                     <td>Orión</td>
                     <td>Es como el guerrero de la antigua Grecia con su arma y escudo. Lo reconocerás por su cinturón de tres
-                        estrellas. ¡Tiene 204 estrellas!</tr>
-                 <tr>
+                        estrellas. ¡Tiene 204 estrellas!</td>
+                        <td><img src="img/orion.jfif" width="150px" alt=""></td>
+                    </tr>
+                    <tr>
                     <td>Casiopeia</td>
                     <td>Representa a la vanidosa Casiopea y su castigo. Tiene 157 estrellas y Tsih es la más brillante.</td>
+                    <td><img src="img/casipeia.jfif" width="150px" alt=""></td>
                  </tr> 
                 <tr>
                     <td>Perseo</td>
                     <td> El héroe que venció a la Medusa y salvó a Andrómeda. Aquí llueven estrellas en las perseidas. Consta de
                         158 estrellas, siendo Mirfak la más brillante.</td>
+                        <td><img src="img/perseo.jfif" width="150px" alt=""></td>
                 </tr>
                 <tr>
                     <td>Triángulo</td>
-                    <td> Un triángulo en el cielo, ¡así de simple! Pero solo 25 estrellas aquí.</li> 
-                    </td>
+                    <td> Un triángulo en el cielo, ¡así de simple! Pero solo 25 estrellas aquí. </td>
+                    <td><img src="img/triangulo.jfif" width="150px" alt=""></td>
                 </tr>
             </tbody>
         </table>
@@ -96,29 +116,45 @@
          
         <h3>Hemisferio Sur:</h3>
 
-        <table class="tu" border="4">
+        <table class="table table-bordered table-info" >
             <tbody>
                 <tr>
                     <td>Crux</td>
                     <td>¡La famosa "Cruz del Sur"! Siempre señala al Polo Sur. Tiene 49 estrellas, y Ácrux es la más
-                        brillante.</tr>
+                        brillante.
+                    </td>
+                    <td>
+                        <img src="img/crux.jfif" width="150px">
+                    </td>
                 <tr>
                     <td>Can Mayor</td>
-                    <td>El fiel perro de Orión. Contiene 147 estrellas, y Sirio es la superestrella aquí.</li>
-                    </tr>
+                    <td>El fiel perro de Orión. Contiene 147 estrellas, y Sirio es la superestrella aquí.
+                    </td>
+                    <td>
+                        <img src="img/can mayor.jfif" width="150px">
+                    </td>
                  <tr>
                     <td>Hidra</td>
                     <td>Un monstruo reptil de muchas cabezas. ¡Una constelación gigante con 238 estrellas, Alfard es la más
-                        brillante! </tr> 
+                        brillante! </td> 
+                        <td>
+                            <img src="img/hidra.jfif" width="150px">
+                        </td>
                 <tr>
                     <td>Corona del Sur</td>
                     <td> El héroe que venció a la Medusa y salvó a Andrómeda. Aquí llueven estrellas en las perseidas. Consta de
                         158 estrellas, siendo Mirfak la más brillante.</td>
+                        <td>
+                            <img src="img/corona del sur.jfif" width="150px">
+                        </td>
                 </tr>
                 <tr>
                     <td>Triángulo</td>
                     <td>Representa la corona de laureles del sabio Quirón. Pequeña pero brillante, con 46 estrellas
                         y Beta coronae australis destacándose.</td>
+                        <td>
+                            <img src="img/triangulo 2.jfif" width="150px">
+                        </td>
                 </tr>
             </tbody>
         </table>

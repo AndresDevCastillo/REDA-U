@@ -51,7 +51,20 @@
     respuesta++;
   }
   
-  alert (respuesta) 
+  if(respuesta>=6){
+  Swal.fire({
+  title: "¡FELICITACIONES!",
+  text: "Has acertado: " + respuesta + " respuesta",
+  icon: "success"
+});
+ }
+ else{
+  Swal.fire({
+  title: "¡INTENTALO DE NUEVO!",
+  text: "Has acertado: " + respuesta + " respuesta",
+  icon: "error"
+});
+ }
 
 }
 </script>
