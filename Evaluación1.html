@@ -1,179 +1,285 @@
 <!DOCTYPE html>
 <html lang="ess">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación 1</title>
-    <link rel="icon" type="image/png" href="/icons/Evaluación.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    function Boton () {
-  var pregunta1= document.getElementById('pregunta1').value;
-  var pregunta2= document.getElementById('pregunta2').value;
-  var pregunta3= document.getElementById('pregunta3').value;
-  var pregunta4= document.getElementById('pregunta4').value;
-  var pregunta5= document.getElementById('pregunta5').value;
-  var pregunta6= document.getElementById('pregunta6').value;
-  var pregunta7= document.getElementById('pregunta7').value;
-  var pregunta8= document.getElementById('pregunta8').value;
-  var pregunta9= document.getElementById('pregunta9').value;
-  var pregunta10= document.getElementById('pregunta10').value;
-  var respuesta=0;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluación 1</title>
+  <link rel="icon" type="image/png" href="/icons/Evaluación.png">
+  <script src="assets/vendor/sweet-alert/sweetalert.js"></script>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  if(pregunta1 == 'c') {
-    respuesta++;
-  } 
-  if (pregunta2 == 'c'){
-    respuesta++;
-  }
-  if(pregunta3 == 'c'){
-    respuesta++;
-  }
-  if (pregunta4 == 'c'){
-    respuesta++;
-  }
-  if(pregunta5 == 'c'){
-    respuesta++;
-  }
-  if(pregunta6 == 'c'){
-    respuesta++;
-  }
-  if(pregunta7 == 'c'){
-    respuesta++;
-  }
-  if(pregunta8 == 'c'){
-    respuesta++;
-  }
-  if(pregunta9 == 'c'){
-    respuesta++;
-  }
-  if(pregunta10 == 'c'){
-    respuesta++;
-  }
-  
- if(respuesta>=6){
-  Swal.fire({
-  title: "¡FELICITACIONES!",
-  text: "Has acertado: " + respuesta + " respuesta",
-  icon: "success"
-});
- }
- else{
-  Swal.fire({
-  title: "¡INTENTALO DE NUEVO!",
-  text: "Has acertado: " + respuesta + " respuesta",
-  icon: "error"
-});
- }
+  <script>
+    function Boton() {
+      var pregunta1 = document.getElementById('pregunta1').value;
+      var pregunta2 = document.getElementById('pregunta2').value;
+      var pregunta3 = document.getElementById('pregunta3').value;
+      var pregunta4 = document.getElementById('pregunta4').value;
+      var pregunta5 = document.getElementById('pregunta5').value;
+      var pregunta6 = document.getElementById('pregunta6').value;
+      var pregunta7 = document.getElementById('pregunta7').value;
+      var pregunta8 = document.getElementById('pregunta8').value;
+      var pregunta9 = document.getElementById('pregunta9').value;
+      var pregunta10 = document.getElementById('pregunta10').value;
 
-}
-</script>
-<style>
-    label{
-        font-size: 20px;
+      var alert1 = document.getElementById('alert1');
+      var alert2 = document.getElementById('alert2');
+      var alert3 = document.getElementById('alert3');
+      var alert4 = document.getElementById('alert4');
+      var alert5 = document.getElementById('alert5');
+      var alert6 = document.getElementById('alert6');
+      var alert7 = document.getElementById('alert7');
+      var alert8 = document.getElementById('alert8');
+      var alert9 = document.getElementById('alert9');
+      var alert10 = document.getElementById('alert10');
+      for (let i = 1; i <= 10; i++) {
+        document.getElementById('alert' + i).innerHTML = "";
+      }
+
+      var respuesta = 0;
+
+      if (pregunta1 == 'c') {
+        respuesta++;
+        alert1.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert1.innerHTML += '<div class="alert alert-danger" role="alert"> La respuesta correcta es: Júpiter! </div>'
+      }
+      if (pregunta2 == 'c') {
+        respuesta++;
+        alert2.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert2.innerHTML += '<div class="alert alert-danger" role="alert"> La respuesta correcta es: Marte! </div>'
+      }
+      if (pregunta3 == 'c') {
+        respuesta++;
+        alert3.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert3.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: Próxima Centauri! </div>'
+      }
+      if (pregunta4 == 'c') {
+        respuesta++;
+        alert4.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert4.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: jupiter y Saturno! </div>'
+      }
+      if (pregunta5 == 'c') {
+        respuesta++;
+        alert5.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert5.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: 4! </div>'
+      }
+      if (pregunta6 == 'c') {
+        respuesta++;
+        alert6.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert6.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: El Sol! </div>'
+      }
+      if (pregunta7 == 'c') {
+        respuesta++;
+        alert7.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert7.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: Neptuno! </div>'
+      }
+      if (pregunta8 == 'c') {
+        respuesta++;
+        alert8.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert8.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: 8! </div>'
+      }
+      if (pregunta9 == 'c') {
+        respuesta++;
+        alert9.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert9.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: El Sol! </div>'
+      }
+      if (pregunta10 == 'c') {
+        respuesta++;
+        alert10.innerHTML +=
+          '<div class="alert alert-success" role="alert"> Respuesta Correcta! </div>';
+      } else {
+        alert10.innerHTML +=
+          '<div class="alert alert-danger" role="alert"> La respuesta correcta es: Tierra! </div>'
+      }
+
+      if (respuesta >= 6) {
+        Swal.fire({
+          title: "¡FELICITACIONES!",
+          text: "Has acertado: " + respuesta + " respuesta",
+          icon: "success"
+        });
+      } else {
+        Swal.fire({
+          title: "¡INTENTALO DE NUEVO!",
+          text: "Has acertado: " + respuesta + " respuesta",
+          icon: "error"
+        });
+      }
+
     }
-    body{
-      margin: 80%;
+  </script>
+  <style>
+    label {
+      font-size: 20px;
+    }
+
+    body {
       background-color: #B6CADE;
     }
-</style>
+
+    .contenido {
+      margin-top: 100px;
+    }
+  </style>
 </head>
-<body class="container mt-5">
-   <center><h2>EVALUACIÓN 1</h2></center> 
+
+<body class="container m-5">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>ASTROS</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="contenido.html">Contenidos</a></li>
+          <li><a class="nav-link scrollto" href="objetivo.html">Objetivo</a></li>
+          <li><a class="nav-link scrollto active" href="evaluacion.html">Evaluación</a></li>
+          <li><a class="nav-link scrollto" href="complementario.html">Material complementarios </a></li>
+          <li><a class="nav-link scrollto" href="creditos.html">Créditos</a></li>
+          <ul>
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="col-auto contenido">
+    <center>
+      <h2>EVALUACIÓN 1</h2>
+    </center>
     <br>
     <label>1. ¿Cuál es el planeta más grande de nuestro sistema solar?</label>
     <select class="form-control" id="pregunta1">
-        <option value="seleccione una respuesta"></option>
-        <option>Tierra</option>
-        <option value="c">Júpiter</option>
-        <option>Saturno</option>
-        <option>Marte</option>
-    </tr>
+      <option value="seleccione una respuesta"></option>
+      <option>Tierra</option>
+      <option value="c">Júpiter</option>
+      <option>Saturno</option>
+      <option>Marte</option>
+      </tr>
     </select>
+    <div id="alert1"></div>
     <br>
     <label>2. ¿Quién es el vecino rojo?</label>
     <select class="form-control" id="pregunta2">
-        <option value="seleccione una respuesta"></option>
-        <option> Tierra</option>
-        <option>Saturno</option>
-        <option value="c">Marte</option>
-        <option>Cometas</option>
+      <option value="seleccione una respuesta"></option>
+      <option> Tierra</option>
+      <option>Saturno</option>
+      <option value="c">Marte</option>
+      <option>Cometas</option>
     </select>
-<br>
+    <div id="alert2"></div>
+    <br>
     <label>3. ¿Cuál es la estrella más cercana a la Tierra?</label>
     <select class="form-control" id="pregunta3">
-        <option value="seleccione una respuesta"></option>
-        <option>Sirio</option>
-        <option value="c">Próxima Centauri</option>
-        <option>Alfa Centauri</option>
-        <option>Betelgeuse</option>
+      <option value="seleccione una respuesta"></option>
+      <option>Sirio</option>
+      <option value="c">Próxima Centauri</option>
+      <option>Alfa Centauri</option>
+      <option>Betelgeuse</option>
     </select>
+    <div id="alert3"></div>
     <br>
     <label>4. ¿Cuáles son los gigantes al vapor?</label>
     <select class="form-control" id="pregunta4">
-        <option value="seleccione una respuesta"></option>
-        <option value="c">jupiter y Saturno</option>
-        <option>Tierra y Marte</option>
-        <option>Neptuno y venus</option>
-        <option>No existen</option>
+      <option value="seleccione una respuesta"></option>
+      <option value="c">jupiter y Saturno</option>
+      <option>Tierra y Marte</option>
+      <option>Neptuno y venus</option>
+      <option>No existen</option>
     </select>
+    <div id="alert4"></div>
     <br>
     <label>5. ¿Cuántos planetas terrestres hay en nuestro sistema solar?</label>
     <select class="form-control" id="pregunta5">
-        <option value="seleccione una respuesta"></option>
-        <option  value="c">4</option>
-        <option>6</option>
-        <option>2</option>
-        <option>8</option>
+      <option value="seleccione una respuesta"></option>
+      <option value="c">4</option>
+      <option>6</option>
+      <option>2</option>
+      <option>8</option>
     </select>
+    <div id="alert5"></div>
     <br>
     <label>6. ¿Qué astro no sigue las reglas?</label>
     <select class="form-control" id="pregunta6">
-        <option value="seleccione una respuesta"></option>
-        <option value="c">El Sol</option>
-        <option>La tierra</option>
-        <option>Las estrellas</option>
-        <option>Las galaxias</option>
+      <option value="seleccione una respuesta"></option>
+      <option value="c">El Sol</option>
+      <option>La tierra</option>
+      <option>Las estrellas</option>
+      <option>Las galaxias</option>
     </select>
+    <div id="alert6"></div>
     <br>
     <label>7. ¿Quién es el pescado misterioso?</label>
     <select class="form-control" id="pregunta7">
-        <option value="seleccione una respuesta"></option>
-        <option value="c">Neptuno</option>
-        <option>Tierra</option>
-        <option>Saturno</option>
-        <option>Venus</option>
+      <option value="seleccione una respuesta"></option>
+      <option value="c">Neptuno</option>
+      <option>Tierra</option>
+      <option>Saturno</option>
+      <option>Venus</option>
     </select>
+    <div id="alert7"></div>
     <br>
     <label>8. ¿Por cuántos planetas está conformado el sistema solar?</label>
     <select class="form-control" id="pregunta8">
-        <option value="seleccione una respuesta"></option>
-        <option>10</option>
-        <option>6</option>
-        <option value="c">8</option>
-        <option>20</option>
+      <option value="seleccione una respuesta"></option>
+      <option>10</option>
+      <option>6</option>
+      <option value="c">8</option>
+      <option>20</option>
     </select>
+    <div id="alert8"></div>
     <br>
     <label>9. ¿Quien está situado en el centro del sistema solar?</label>
     <select class="form-control" id="pregunta9">
-        <option value="seleccione una respuesta"></option>
-        <option>La luna</option>
-        <option  value="c">El sol</option>
-        <option>jupiter</option>
-        <option>urano</option>
+      <option value="seleccione una respuesta"></option>
+      <option>La luna</option>
+      <option value="c">El sol</option>
+      <option>jupiter</option>
+      <option>urano</option>
     </select>
+    <div id="alert9"></div>
     <br>
     <label>10. ¿Comó se llama nuestro planeta?</label>
     <select class="form-control" id="pregunta10">
-        <option value="seleccione una respuesta"></option>
-        <option>Saturno</option>
-        <option>Marte</option>
-        <option>Júpiter</option>
-        <option value="c">Tierra</option>
+      <option value="seleccione una respuesta"></option>
+      <option>Saturno</option>
+      <option>Marte</option>
+      <option>Júpiter</option>
+      <option value="c">Tierra</option>
     </select>
+    <div id="alert10"></div>
     <br>
-    <button class="btn btn-outline-success" onclick="Boton ()">Enviar</button> 
-    
+    <button class="btn btn-outline-success" onclick="Boton ()">Enviar</button>
+
+  </div>
 </body>
+
 </html>
